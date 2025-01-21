@@ -27,7 +27,6 @@ function FansBook1() {
         const modalImg = document.getElementById("img01");
         const captionText = document.getElementById("caption");
         modal.style.display = "block";
-        //console.log(this.src.replace("_thumbnail", ""));
         modalImg.src = this.src.replace("_thumbnail", "");
         captionText.innerHTML = this.nextElementSibling.innerHTML;
       });
@@ -78,7 +77,7 @@ function FansBook1() {
     <section id="gallery">
     {json.map(item=> (
     <div className={'photo '+item.category}>
-      <img src={item.filename}/>
+      <img src={item.filename.replace(".jpg","_thumbnail.jpg")}/>
       <p className="caption">{item.title}</p>
       <a href="#">Details</a>
       <ul className="details">
