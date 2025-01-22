@@ -1,12 +1,13 @@
 import { useEffect } from "react";
-import json from "../data/fans-book1.json"
+import json from "../data/fans-book2.json"
 import "./gallery.css"
 import PageFilters from "../components/PageFilters"
+import MyModal from "../components/MyModal"
+import Header from "../components/Header"
 
-
-function FansBook1() {
+function FansBook2() {
   useEffect(() => {
-    document.title = "Chinese Fans Book 1";
+    document.title = "Chinese Fans Book 2";
     document.querySelectorAll(".photo img").forEach((img) => {
       img.addEventListener("click", function () {
         const modal = document.getElementById("myModal");
@@ -46,12 +47,7 @@ function FansBook1() {
 
   return (
     <>
-    <header>
-      <h1>Chinese Fans - Book 1</h1>
-      <p>
-        Collection of 41 chinese fan paintings from the 19th to early 20th centuries.
-      </p>
-    </header>
+    <Header title="Chinese Fans - Book 2" description="Collection of 22 chinese fan paintings from the mid-18th to early 20th centuries."/>
     <PageFilters/>
     <section id="gallery">
     {json.map(item=> (
@@ -71,13 +67,9 @@ function FansBook1() {
     ))
     }
     </section>
-    <div id="myModal" className="modal">
-      <span className="close">&times;</span>
-      <img className="modal-content" id="img01" />
-      <div id="caption"></div>
-    </div>
+    <MyModal/>
 
     </>
   );
 }
-export default FansBook1;
+export default FansBook2;

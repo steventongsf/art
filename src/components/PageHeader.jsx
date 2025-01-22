@@ -7,13 +7,11 @@ function PageHeader() {
     <div className="pageheader">
       <span className="logo"><RouterLink to="/" className="logo">Asian Art Gallery</RouterLink></span>
       <nav className="nav">
-        <RouterLink to="/fans-book1" className="nav_menuitem">Landscape Book 1</RouterLink>
-        <RouterLink to="/fans-book1" className="nav_menuitem">Landscape Book 2</RouterLink>
-        <RouterLink to="/fans-book1" className="nav_menuitem">Landscape Book 3</RouterLink>
-        <RouterLink to="/fans-book1" className="nav_menuitem">Landscape Book 4</RouterLink>
-        <RouterLink to="/fans-book1" className="nav_menuitem">Landscape Book 5</RouterLink>
-        <RouterLink to="/fans-book1" className="nav_menuitem">Fans Book 1</RouterLink>
-        <RouterLink to="/fans-book1" className="nav_menuitem">Fans Book 2</RouterLink>
+        <RouterLink to="/fans-book1" className="nav_menuitem">Fan Book 1</RouterLink>
+        <RouterLink to="/fans-book2" className="nav_menuitem">Fan Book 2</RouterLink>
+        <RouterLink to="/fans-book3" className="nav_menuitem">Fan Book 3</RouterLink>
+        <RouterLink to="/fans-book4" className="nav_menuitem">Fan Book 4</RouterLink>
+        <RouterLink to="/fans-book5" className="nav_menuitem">Fan Book 5</RouterLink>
       </nav>
     </div>
   );
