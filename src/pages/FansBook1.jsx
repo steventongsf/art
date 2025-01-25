@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import json from "../data/fans-book1.json"
 import "./gallery.css"
 import PageFilters from "../components/PageFilters"
-import Header from "../components/Header"
+import Heading from "../components/Heading"
+import MyModal from "../components/MyModal"
 
 function FansBook1() {
   useEffect(() => {
@@ -46,7 +47,7 @@ function FansBook1() {
 
   return (
     <>
-    <Header title="Chinese Fans - Book 1" description="Collection of 42 chinese fan paintings from the early 19th to early 20th centuries."/>
+    <Heading title="Chinese Fans - Book 1" description="Collection of 42 chinese fan paintings from the early 19th to early 20th centuries."/>
     <PageFilters/>
     <section id="gallery">
     {json.map(item=> (
@@ -66,12 +67,7 @@ function FansBook1() {
     ))
     }
     </section>
-    <div id="myModal" className="modal">
-      <span className="close">&times;</span>
-      <img className="modal-content" id="img01" />
-      <div id="caption"></div>
-    </div>
-
+    <MyModal/>
     </>
   );
 }

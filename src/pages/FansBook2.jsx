@@ -3,7 +3,7 @@ import json from "../data/fans-book2.json"
 import "./gallery.css"
 import PageFilters from "../components/PageFilters"
 import MyModal from "../components/MyModal"
-import Header from "../components/Header"
+import Heading from "../components/Heading"
 
 function FansBook2() {
   useEffect(() => {

@@ -7,6 +7,7 @@ function PageFilters() {
       console.log(photo);
     });
   }
+  console.log("PageFilters")
   
     return (
     <nav>
