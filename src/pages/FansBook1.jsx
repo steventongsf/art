@@ -7,8 +7,10 @@ import MyModal from "../components/MyModal"
 import ArtItem from "../components/ArtItem";
 
 function FansBook1() {
+  const title = "Chinese Fans Book 1"
+  const description="Collection of 42 chinese fan paintings from the early 19th to early 20th centuries."
   useEffect(() => {
-    document.title = "Chinese Fans Book 1";
+    document.title = title;
     document.querySelectorAll(".photo img").forEach((img) => {
       img.addEventListener("click", function () {
         const modal = document.getElementById("myModal");
@@ -34,7 +36,7 @@ function FansBook1() {
 
   return (
     <>
-    <Heading title="Chinese Fans - Book 1" description="Collection of 42 chinese fan paintings from the early 19th to early 20th centuries."/>
+    <Heading title={title} description={description}/>
     <PageFilters/>
     <section id="gallery">
     {json.map(item=> (

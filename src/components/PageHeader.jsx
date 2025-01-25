@@ -1,6 +1,7 @@
 import { Link as RouterLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./PageHeader.css";
+// Top bar always in view.
 function PageHeader() {
   
   return (
