@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import json from "../data/fans-book1.json"
 import "./gallery.css"
 import PageFilters from "../components/PageFilters"
-
+import Header from "../components/Header"
 
 function FansBook1() {
   useEffect(() => {
@@ -46,12 +46,7 @@ function FansBook1() {
 
   return (
     <>
-    <header>
-      <h1>Chinese Fans - Book 1</h1>
-      <p>
-        Collection of 42 chinese fan paintings from the early 19th to early 20th centuries.
-      </p>
-    </header>
+    <Header title="Chinese Fans - Book 1" description="Collection of 42 chinese fan paintings from the early 19th to early 20th centuries."/>
     <PageFilters/>
     <section id="gallery">
     {json.map(item=> (
