@@ -49,7 +49,7 @@ function FansBook1() {
     <header>
       <h1>Chinese Fans - Book 1</h1>
       <p>
-        Collection of 41 chinese fan paintings from the 19th to early 20th centuries.
+        Collection of 42 chinese fan paintings from the early 19th to early 20th centuries.
       </p>
     </header>
     <PageFilters/>
