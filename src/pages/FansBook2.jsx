@@ -47,7 +47,12 @@ function FansBook2() {
 
   return (
     <>
-    <Header title="Chinese Fans - Book 2" description="Collection of 22 chinese fan paintings from the mid-18th to early 20th centuries."/>
+    <header>
+      <h1>Chinese Fans - Book 2</h1>
+      <p>
+      Collection of 22 chinese fan paintings from the mid-18th to early 20th centuries.
+      </p>
+    </header>
     <PageFilters/>
     <section id="gallery">
     {json.map(item=> (
@@ -67,7 +72,11 @@ function FansBook2() {
     ))
     }
     </section>
-    <MyModal/>
+    <div id="myModal" className="modal">
+      <span className="close">&times;</span>
+      <img className="modal-content" id="img01" />
+      <div id="caption"></div>
+    </div>
 
     </>
   );
